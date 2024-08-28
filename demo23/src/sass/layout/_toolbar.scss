@@ -1,0 +1,24 @@
+//
+// Toolbar
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-toolbar {
+		align-items: start;
+	}
+
+	[data-kt-app-toolbar-sticky="on"] {
+		.app-toolbar {
+			background-color: transparent;
+			box-shadow: none;
+			align-items: stretch;
+
+			.app-container {
+				@include border-bottom-radius($card-border-radius);
+				background-color: var(--#{$prefix}app-toolbar-sticky-bg-color);
+				box-shadow: var(--#{$prefix}app-toolbar-sticky-box-shadow);			
+			}
+		}	
+	}
+}

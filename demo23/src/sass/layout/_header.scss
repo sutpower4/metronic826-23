@@ -1,0 +1,46 @@
+//
+// Header
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header-menu {
+		.menu {
+			& > .menu-item {
+				padding-left: 0 !important;
+				margin-left: 0 !important;
+				margin-right: 2rem !important;
+
+				& > .menu-link {
+					background-color: transparent !important;
+					padding-left: 0 !important;
+					margin-left: 0 !important;
+					font-weight: $font-weight-semibold;
+					font-size: 1.15rem;
+				}
+			}
+		}
+	}
+
+	[data-kt-app-header-sticky="on"] {
+		.app-header {
+			background-color: transparent;
+			box-shadow: none;
+			
+			$offset: divide($app-container-padding-x, 2);	
+
+			.app-container {
+				padding-left: $offset !important;	
+				padding-right: $offset !important;	
+			}
+
+			.app-header-wrapper {
+				@include border-bottom-radius($card-border-radius);
+				background-color: var(--#{$prefix}app-header-sticky-bg-color);
+				box-shadow: var(--#{$prefix}app-header-sticky-box-shadow);	
+				padding-left: $offset;	
+				padding-right: $offset;
+			}
+		}	
+	}
+}
