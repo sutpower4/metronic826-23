@@ -2541,12 +2541,12 @@ textarea.form-control-lg {
     display: inline-block;
     margin-right: 1rem;
 }
-.btn-check {
+.-check {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none;
 }
-.btn-check:disabled + .btn,
+.-check:disabled + .,
 .btn-check[disabled] + .btn {
     pointer-events: none;
     filter: none;
@@ -46383,6 +46383,42 @@ label.rating-label:hover ~ .rating-label > i {
 .app-engage .app-engage-btn.hover-success:hover i {
     color: var(--bs-success-inverse);
 }
+
+.app-engage .app-engage-btn.hover-danger:hover {
+    color: var(--bs-danger-inverse);
+    border-color: var(--bs-danger);
+    background-color: var(--bs-danger);
+}
+.app-engage .app-engage-btn.hover-danger:hover .svg-icon,
+.app-engage .app-engage-btn.hover-danger:hover i {
+    color: var(--bs-danger-inverse);
+}
+
+.app-engage .app-engage-btn.hover-info:hover {
+    color: var(--bs-info-inverse);
+    border-color: var(--bs-info);
+    background-color: var(--bs-info);
+}
+.app-engage .app-engage-btn.hover-info:hover .svg-icon,
+.app-engage .app-engage-btn.hover-info:hover i {
+    color: var(--bs-info-inverse);
+}
+
+.app-engage .app-engage-btn.hover-warning:hover {
+    color: var(--bs-warning-inverse);
+    border-color: var(--bs-warning);
+    background-color: var(--bs-warning);
+}
+.app-engage .app-engage-btn.hover-warning:hover .svg-icon,
+.app-engage .app-engage-btn.hover-warning:hover i {
+    color: var(--bs-warning-inverse);
+}
+
+
+
+
+
+
 .app-engage .app-engage-btn.app-engage-btn-toggle-off {
     width: 35px;
     height: 35px;
